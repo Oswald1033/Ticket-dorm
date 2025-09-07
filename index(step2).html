@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Event - Step 2</title>
+  <link rel="stylesheet" href="style(step2).css">
+</head>
+<body>
+  <div class="form-container">
+    
+    <div class="form-header">
+      <span>Step 2 of 3: Create event</span>
+    </div>
+
+    
+    <div class="form-group">
+      <label>Location <span class="required">*</span></label>
+      <p class="helper-text">
+        Specify the event's location, whether it's a physical venue or an online event, 
+        to ensure attendees know how to join.
+      </p>
+      <div class="event-types">
+        <button type="button" class="active">🏛 Venue</button>
+        <button type="button">💻 Online event</button>
+      </div>
+      <input type="text" placeholder="Location*">
+    </div>
+
+    
+    <div class="form-group">
+      <label>Ticket price <span class="required">*</span></label>
+      <p class="helper-text">Set a competitive price to attract a diverse audience.</p>
+      <input type="text" placeholder="₦2,000.00">
+    </div>
+
+    
+    <div class="form-group">
+      <label>Event capacity <span class="required">*</span></label>
+      <p class="helper-text">
+        Event capacity is the total number of tickets you’re willing to sell.
+      </p>
+      <input type="text" placeholder="Total capacity">
+    </div>
+
+    
+    <div class="form-group">
+      <label>About event</label>
+      <p class="helper-text">Input the description of your event</p>
+      <textarea placeholder="Value"></textarea>
+    </div>
+
+    
+    <button class="continue-btn">Continue</button>
+  </div>
+</body>
+</html>

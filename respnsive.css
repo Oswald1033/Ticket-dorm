@@ -1,0 +1,184 @@
+
+@media (max-width: 768px) {
+  html {
+    font-size: 55%; 
+  }
+  .nav-bar {
+    padding: 10px 30px;
+    gap: 2rem;
+  }
+  .nav-bar .nav-group {
+    width: auto;
+    flex: 1;
+  }
+  .nav-bar .nav-group .search-box {
+    display: none; 
+  }
+  .nav-bar .nav-group .nav-links {
+    gap: 0.8rem;
+  }
+  .nav-bar .nav-btns .btn {
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+  }
+
+
+  .home-hero-section {
+    padding: 0 3rem;
+  }
+  .home-hero-section .hero-heading {
+    font-size: 2.4rem;
+  }
+  .home-hero-section .sub-text {
+    font-size: 1.2rem;
+  }
+  .home-hero-section .btn {
+    padding: 1rem 2rem;
+    font-size: 0.9rem;
+  }
+
+
+  .find-event-section h2 {
+    font-size: 2.6rem;
+  }
+
+  .tips-section .tips-card {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .tips-section .tips-card .left-side,
+  .tips-section .tips-card .right-side {
+    width: 100%;
+  }
+  .tips-section .tips-card .right-side img {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .sell-ticket-section .text-section {
+    width: 100%;
+    padding: 2rem;
+    text-align: center;
+  }
+
+
+  .get-started-section h1 {
+    font-size: 2.6rem;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    height: auto;
+  }
+  .footer-container .activities-box {
+    flex-direction: column;
+    gap: 2rem;
+  }
+  .footer-container .socials-box .social-icons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  html {
+    font-size: 50%;
+  }
+
+  .nav-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 1rem;
+    gap: 1rem;
+  }
+  .nav-bar .nav-group {
+    flex-direction: column;
+    width: 100%;
+  }
+  .nav-bar .nav-group .search-box {
+    display: none;
+  }
+  .nav-bar .nav-group .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+    text-align: left;
+  }
+  .nav-bar .nav-btns {
+    width: 100%;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .nav-bar .nav-btns .btn {
+    flex: 1;
+    text-align: center;
+  }
+
+ 
+  .home-hero-section {
+    padding: 0 1.5rem;
+  }
+  .home-hero-section .hero-heading {
+    font-size: 2rem;
+  }
+  .home-hero-section .sub-text {
+    font-size: 1rem;
+  }
+  .home-hero-section .btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .find-event-section h2 {
+    font-size: 2rem;
+    text-align: center;
+    padding: 0 1rem;
+  }
+  .find-event-section button {
+    width: 100%;
+    padding: 1rem;
+  }
+
+
+  .tips-section,
+  .sell-ticket-section,
+  .get-started-section {
+    padding: 3rem 1.5rem;
+  }
+
+
+  .tips-section .tips-card .right-side img {
+    max-width: 100%;
+  }
+
+ 
+  .get-started-section h1 {
+    font-size: 2.2rem;
+  }
+  .get-started-section button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+
+ 
+  .footer-container {
+    padding: 2rem 1rem;
+  }
+  .footer-container .logo-box img {
+    width: 100px;
+  }
+  .footer-container .socials-box .social-icons {
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .footer-container .socials-box .icon {
+    width: 40px;
+    height: 40px;
+  }
+}

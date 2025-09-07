@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eee;
+  padding: 20px; 
+}
+
+.container {
+  display: flex;
+  width: 900px;
+  max-width: 100%;   
+  height: 500px;
+  background: #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  overflow: hidden;  
+  
+}
+
+.left {
+  flex: 1;
+  padding: 40px;
+  background: #fff;
+  border-top-left-radius: 80px;
+  border-bottom-left-radius: 80px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left h2 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  color: #333;
+}
+
+.left h3 {
+  margin-bottom: 15px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #444;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin: 10px 0 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  font-size: 14px;
+}
+
+input:focus {
+  border-color: #a020f0;
+  box-shadow: 0 0 5px rgba(160, 32, 240, 0.4);
+}
+
+.options {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 14px;
+  color: #555;
+  flex-wrap: wrap;
+}
+
+.options a {
+  text-decoration: none;
+  color: #a020f0;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: #a020f0;
+  color: #fff;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+button:hover {
+  background: #8000d0;
+}
+
+.right {
+  flex: 1;
+  background: url("meme.jpg") no-repeat center/cover;
+}
+
+
+@media (max-width: 992px) {
+  .container {
+    width: 95%;
+    height: auto;
+  }
+
+  .left {
+    padding: 30px;
+  }
+
+  .left h2 {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    height: auto;
+    border-radius: 20px;
+  }
+
+  .left {
+    border-radius: 20px 20px 0 0;
+    padding: 20px;
+  }
+
+  .right {
+    height: 200px;
+    border-radius: 0 0 20px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .left h2 {
+    font-size: 20px;
+  }
+
+  .left h3 {
+    font-size: 16px;
+  }
+
+  input, button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .options {
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}
